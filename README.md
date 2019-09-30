@@ -1,6 +1,6 @@
 # Render math into an image
 
-Uses `mathJax` and `svg2img` to render LaTeX or (TBD) AsciiMath into an SVG or PNG image.
+Uses [mathjax](https://www.mathjax.org/) and [svg2img](https://www.npmjs.com/package/svg2img) to render LaTeX or (TBD) [ASCIIMath](http://asciimath.org/) into an SVG or PNG image.
 
 Example:
 
@@ -19,3 +19,9 @@ let png = mathrender.latexToPNG(latex) // buffer
 require('fs').writeFileSync('output.png', png)
 ```
 
+## TODO
+
+- [ ] support Ascii Math
+- [ ] use this? https://github.com/mathjax/MathJax-node
+- [ ] check this https://github.com/pkra/mathjax-node-svg2png
+    - which uses this https://www.npmjs.com/package/svg2png

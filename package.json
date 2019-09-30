@@ -2,9 +2,10 @@
   "name": "mathrender",
   "version": "0.0.1",
   "description": "",
-  "main": "mathjaxConvert.js",
+  "main": "mathrender.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/test.js",
+    "update-dependencies": "npm-check-updates -u"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +14,8 @@
     "mathjax-full": "^3.0.0",
     "svg2img": "^0.6.1",
     "yargs": "^14.0.0"
+  },
+  "devDependencies": {
+    "npm-check-updates": "^3.1.23"
   }
 }

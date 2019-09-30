@@ -17,3 +17,5 @@ test OK
 `)
 
 mathjaxConvert.latexToPNG(formula)
+    .then(png => console.log(png.toString('base64')))
+    .catch(err => console.error(err.toString('base64')))

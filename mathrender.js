@@ -36,7 +36,7 @@ let svg2img = require("svg2img")
 function latexToPNG(inputDoc) {
     let svg = latexToSVG(inputDoc);
     return new Promise((reject,resolve) => {
-        svg2img(svgOutput, function(error, buffer) {
+        svg2img(svg, function(error, buffer) {
             if(error) reject(error)
             else resolve(buffer)
         })
